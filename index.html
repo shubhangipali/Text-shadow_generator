@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Box shadow Generator Using HTML Css Javascript BY Saloni</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/box-style.css">
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+      </div>
+      <div class="p-4 pt-5">
+        <h1><a href="index.html" class="logo">Options</a></h1>
+        <div class="backshadow">
+          <label for="shadowcolor">Shadow Color</label>&nbsp;&nbsp;
+          <input type="text" id="shadowcolor" value="#000000">
+          <input type="color" id="scolor">
+        </div>
+
+        <div class="backshadow">
+          <label for="hlength">Horizontal Length</label>&nbsp;&nbsp;
+          <input type="text" class="slider-input" id="hlength" value="4" readonly
+            style="border:0; color:#fff; font-weight:bold;">
+          <div id="hlength-slider" class="sliderslide"></div>
+        </div>
+
+        <div class="backshadow">
+          <label for="vlength">Vertical Length</label>&nbsp;&nbsp;
+          <input type="text" class="slider-input" id="vlength" value="4" readonly
+            style="border:0; color:#fff; font-weight:bold;">
+          <div id="vlength-slider" class="sliderslide"></div>
+        </div>
+
+        <div class="backshadow">
+          <label for="bradius">Blur radius</label>&nbsp;&nbsp;
+          <input type="text" id="bradius" value="2" readonly class="slider-input"
+            style="border:0; color:#fff; font-weight:bold;">
+          <div id="bradius-slider" class="sliderslide"></div>
+        </div>
+
+        <div class="backshadow">
+          <label for="opacity">Opacity</label>&nbsp;&nbsp;
+          <input type="text" id="opacity" value="0.5" readonly class="slider-input"
+            style="border:0; color:#fff; font-weight:bold;">
+          <div id="opacity-slider" class="sliderslide"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <h1 class=" text-center" style="text-transform: uppercase;
+    font-weight: 600;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    font-size: 50px;"> Text Shadow Generator</h1>
+      <div class="main-content" class="p-4 p-md-5 pt-5">
+        <div class="main-block">
+          <p  id="box-css-generator-demo" style="text-shadow: rgba(0, 0, 0, 0.75) 4px 4px 2px;">The text is the preview text. </p>
+        </div>
+      </div>
+
+      <div class="btn-block" style="margin-top:120px;">
+        <span id="code_copied" class="text-center"></span>
+        <button type="button" style="background:#ff0404" onclick="copyStyle()">Copy Code</button>
+        <span id="boxs_code"> text-shadow: rgba(0,0,0,0.5) 4px 4px 2px 0.5px;
+       
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+  <!-- for slider we use jquery ui class -->
+  
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

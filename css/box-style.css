@@ -1,0 +1,221 @@
+body {
+    background: #ebebeb;
+}
+
+.main-block {
+    max-width: 750px;
+    min-height: 160px;
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 0px #ccc;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
+    background: #fff;
+    margin-top: 100px;
+}
+
+form {
+    margin: 0 30px;
+}
+
+.account-type,
+.gender {
+    margin: 15px 0;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label#icon {
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+label.radio {
+    position: relative;
+    display: inline-block;
+    padding-top: 4px;
+    margin-right: 20px;
+    text-indent: 30px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+label.radio:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #1c87c9;
+}
+
+label.radio:after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    top: 8px;
+    left: 4px;
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    opacity: 0;
+}
+
+input[type=radio]:checked+label:after {
+    opacity: 1;
+}
+
+input[type=text],
+input[type=password] {
+    width: calc(100% - 57px);
+    height: 36px;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px;
+    border-radius: 0 5px 5px 0;
+    border: solid 1px #cbc9c9;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: #fff;
+}
+
+.slider-input[type=text],
+.slider-input[type=password],
+.slider-input[type=text]:focus,
+.slider-input[type=password]:focus,
+.slider-input[type=text]:visited,
+.slider-input[type=password]:visited {
+    width: 40px;
+    height: 36px;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px;
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+
+input[type=password] {
+    margin-bottom: 15px;
+}
+
+#icon {
+    display: inline-block;
+    padding: 9.3px 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: #1c87c9;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: #1c87c9;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+button:hover {
+    background: #26a9e0;
+}
+
+.backshadow {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.35em;
+    margin-left: -0.6em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 0px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: 0px solid #c5c5c5;
+    background: rgb(255 255 255 / 16%) !important;
+}
+
+.ui-slider-horizontal {
+    height: 7px;
+    border-radius: 5px !important;
+}
+
+#boxs_code {
+    background: rgb(134 110 199 / 10%);
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    color: #121212;
+}
+
+#sidebar.active {
+    margin-left: -300px;
+}
+
+.form-switch .form-check-input {
+    width: 4em;
+    height: 2rem;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    text-align: right;
+    margin-left: 37px;
+    padding-top: 12px;
+}
+
+.form-check-input:checked {
+    background-color: #242424;
+    border-color: #000000;
+}
+
+.form-check-input:focus {
+    border-color: #111212;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(58 58 58 / 25%);
+}
+
+p {
+    text-align: center;
+    /* align-items: center; */
+    /* display: flex; */
+    padding-top: 23px;
+    color: black;
+    font-weight: center;
+    font-size: 50px;
+    font-weight: 400;
+}
